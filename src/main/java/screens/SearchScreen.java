@@ -20,8 +20,11 @@ public class SearchScreen extends BaseScreen {
     @FindBy(xpath = "//*[@resource-id ='com.telran.ilcarro:id/title' and @text = 'Registration']")
     MobileElement btnRegistration;
 
-    @FindBy(xpath = "//*[@text = 'Registration success!']")
-    MobileElement popUpMessageRegSuccess;
+    @FindBy(xpath = "//*[@resource-id='com.telran.ilcarro:id/title' and @text='Login']")
+    MobileElement btnLogin;
+
+    @FindBy(xpath = "//hierarchy/android.widget.Toast")
+    MobileElement popUpMessageSuccess;
 
     public SearchScreen clickBtnDots() {
         should(btnDots, 10);
@@ -34,12 +37,17 @@ public class SearchScreen extends BaseScreen {
         return new RegistrationScreen(driver);
     }
 
+    public LoginScreen clickBtnLogin() {
+        btnLogin.click();
+        return new LoginScreen(driver);
+    }
+
 //    public boolean isElementPresent_popUpMessageRegSuccess(){
 //        return isElementPresentWithWait(popUpMessageRegSuccess, 5);
 //    }
 
-    public boolean isElementPresent_popUpMessageRegSuccess(){
-        return textInElementPresent(popUpMessageRegSuccess, "Registration Success!", 5);
+    public boolean isElementPresent_popUpMessageSuccess(String text){
+        return textInElementPresent(popUpMessageSuccess, text, 5);
     }
 
 }

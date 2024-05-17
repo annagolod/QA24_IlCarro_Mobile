@@ -41,9 +41,9 @@ public class RegistrationScreen extends BaseScreen {
         return new SearchScreen(driver);
     }
 
-    public RegistrationScreen clickBtnYallaNegative() {
+    public ErrorScreen clickBtnYallaNegative() {
         btnYalla.click();
-        return this;
+        return new ErrorScreen(driver);
     }
 
 
