@@ -31,6 +31,7 @@ public class AddNewCarTests extends AppiumConfig {
                 .pricePerDay(100.23)
                 .city("Haifa")
                 .build();
+        System.out.println(car.toString());
 
         new SplashScreen(driver)
                 .goToSearchScreen()
@@ -39,20 +40,24 @@ public class AddNewCarTests extends AppiumConfig {
                 .typeLoginForm(user)
                 .clickBtnYallaPositive()
                 .clickBtnDots()
-                .clickBtnMyCarPositive();
-        //.clickBtnAddNewCar()
-        //.typeAddNewCarForm(car);
+                .clickBtnMyCarPositive()
+                .clickBtnAddNewCar()
+                .typeAddNewCarForm(car)
+                .clickBtnAddCarPositive();
 
+        boolean flagEquals = false;
         CarController carController = new CarController();
         carController.getTokenCarController();
         CarsDto carsDto = carController.bodyGetAllUserCarResponse();
         for (CarDto car1 : carsDto.getCars()) {
+            System.out.println(car1.toString());
             if (car.equals(car1)) {
                 System.out.println("equals !!! " + car1.toString());
+                flagEquals = true;
             } else {
                 System.out.println("not equals !!!");
             }
         }
-
+        Assert.assertTrue(flagEquals);
     }
 }

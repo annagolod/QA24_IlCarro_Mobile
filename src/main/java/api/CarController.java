@@ -29,6 +29,7 @@ public class CarController implements BaseApi {
                 .getBody()
                 .as(TokenDto.class)
                 .getAccessToken();
+        System.out.println("token --> " + token);
         requestSpecification = new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
                 .addHeader("Authorization", token)
@@ -38,9 +39,9 @@ public class CarController implements BaseApi {
     private Response addNewCarResponse(CarDto car, String token) {
         return given()
                 .body(car)
-                .spec(requestSpecification)
-                //.contentType(ContentType.JSON)
-                //.header("Authorization", token)
+                //.spec(requestSpecification)
+                .contentType(ContentType.JSON)
+                .header("Authorization", token)
                 .when()
                 .post(BASE_URL + ADDNEWCAR_URL)
                 .thenReturn();

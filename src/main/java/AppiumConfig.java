@@ -21,6 +21,7 @@ public class AppiumConfig {
 //    }
 
     public static AppiumDriver<MobileElement> driver;
+
     @BeforeMethod
     public void setUp(){
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
@@ -29,7 +30,9 @@ public class AppiumConfig {
         desiredCapabilities.setCapability("platformVersion", "8.0");
         desiredCapabilities.setCapability("appPackage", "com.telran.ilcarro");
         desiredCapabilities.setCapability("appActivity", ".SplashActivity");
+
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
+
         try {
             driver = new AppiumDriver<MobileElement>(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
         } catch (MalformedURLException e) {

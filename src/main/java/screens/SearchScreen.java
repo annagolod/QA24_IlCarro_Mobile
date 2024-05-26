@@ -30,7 +30,6 @@ public class SearchScreen extends BaseScreen {
     MobileElement popUpMessageSuccess;
 
 
-
     public SearchScreen clickBtnDots() {
         should(btnDots, 10);
         btnDots.click();

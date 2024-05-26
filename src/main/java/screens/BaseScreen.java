@@ -17,6 +17,12 @@ public class BaseScreen {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
+    public int[] getScreenSize() {// get screen size [0] height, [1] - width
+        int height = driver.manage().window().getSize().getHeight();
+        int width = driver.manage().window().getSize().getWidth();
+        return new int[]{height, width};
+    }
+
     public void pause(int time){
         try {
             Thread.sleep(1000L);
