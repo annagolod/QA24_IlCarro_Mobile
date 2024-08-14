@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1bcc4f4-6f74-43fb-93e5-8bb0ddf60b57" name="Changes" comment="Added API to mobile">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppiumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppiumConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/CarDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CarDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/CarsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CarsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/AddNewCarScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewCarScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/MyCarsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/MyCarsScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewCarTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="f1bcc4f4-6f74-43fb-93e5-8bb0ddf60b57" name="Changes" comment="Fixed API to mobile" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -277,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716403590660</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed API to mobile">
+      <option name="closed" value="true" />
+      <created>1716734708473</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716734708473</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -285,6 +282,7 @@
     <MESSAGE value="Added RegistrationTests &amp; Screens" />
     <MESSAGE value="Added LoginTests" />
     <MESSAGE value="Added API to mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added API to mobile" />
+    <MESSAGE value="Fixed API to mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed API to mobile" />
   </component>
 </project>
